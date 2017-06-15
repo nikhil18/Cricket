@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.cricket.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center_horizontal"
+                android:text="India"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-dark"
+                android:textColor="#000000" />
+
+            <TextView
+                style="@style/custom"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textSize="40sp"
+                android:fontFamily="sans-serif-dark"
+                android:textColor="#000000"
+                android:id="@+id/indiaScore"/>
+
+            <TextView
+                style="@style/custom"
+                android:text="0"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-dark"
+                android:textColor="#000000"
+                android:id="@+id/outInd"/>
+
+            <Button
+                style="@style/custom"
+                android:text="out"
+                android:background="#2979FF"
+                android:textSize="18sp"
+                android:onClick="addIndOut"/>
+
+            <Button
+                style="@style/custom"
+                android:text="six"
+                android:background="#2979FF"
+                android:onClick="addSixInd"/>
+
+            <Button
+                style="@style/custom"
+                android:text="four"
+                android:background="#2979FF"
+                android:onClick="addFourInd"/>
+
+            <Button
+                style="@style/custom"
+                android:text="three"
+                android:background="#2979FF"
+                android:onClick="addThreeInd"/>
+
+            <Button
+                style="@style/custom"
+                android:text="two"
+                android:background="#2979FF"
+                android:onClick="addTwoInd"/>
+
+            <Button
+                style="@style/custom"
+                android:text="one/wide/no ball"
+                android:background="#2979FF"
+                android:onClick="addOneInd"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center_horizontal"
+                android:text="Australia"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-dark"
+                android:textColor="#000000"/>
+
+            <TextView
+                style="@style/custom"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textSize="40sp"
+                android:fontFamily="sans-serif-dark"
+                android:textColor="#000000"
+                android:id="@+id/australiaScore" />
+
+            <TextView
+                style="@style/custom"
+                android:text="0"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-dark"
+                android:textColor="#000000"
+                android:id="@+id/outAus"/>
+
+            <Button
+                style="@style/custom"
+                android:text="out"
+                android:background="#FFEE58"
+                android:textSize="18sp"
+                android:onClick="addAusOut"/>
+
+            <Button
+                style="@style/custom"
+                android:text="six"
+                android:background="#FFEE58"
+                android:onClick="addSixAus"/>
+
+            <Button
+                style="@style/custom"
+                android:text="four"
+                android:background="#FFEE58"
+                android:onClick="addFourAus"/>
+
+            <Button
+                style="@style/custom"
+                android:text="three"
+                android:background="#FFEE58"
+                android:onClick="addThreeAus"/>
+
+            <Button
+                style="@style/custom"
+                android:text="two"
+                android:background="#FFEE58"
+                android:onClick="addTwoAus"/>
+
+            <Button
+                style="@style/custom"
+                android:text="one/wide/no ball"
+                android:background="#FFEE58"
+                android:onClick="addOneAus"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="reset"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="resetScore"/>
+    <View
+        android:layout_width="1dp"
+        android:layout_height="455dp"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/darker_gray"/>
+    </RelativeLayout>
+
